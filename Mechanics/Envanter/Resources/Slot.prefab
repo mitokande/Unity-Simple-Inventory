@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayedslots: {fileID: 0}
+  mouseslot: {fileID: 0}
 --- !u!114 &32260300268035438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae73a7990b8f82f4ca71e6f3a36e00bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayedslots: {fileID: 0}
 --- !u!1 &7614027777866396763
 GameObject:
   m_ObjectHideFlags: 0
