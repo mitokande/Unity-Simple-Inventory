@@ -18,7 +18,6 @@ public class Envanter : ScriptableObject
             }
         }
         EmptySlot(item, amount);
-        //itemlist.Add(new EnvanterSlot(item.ID, item, amount));
     }
     public EnvanterSlot EmptySlot(Item item,int amount)
     {
@@ -35,7 +34,6 @@ public class Envanter : ScriptableObject
     }
     public void SwapItem(EnvanterSlot slot1, EnvanterSlot slot2)
     {
-        Debug.Log("swap");
         EnvanterSlot temp = new EnvanterSlot(slot2.slotid, slot2.item, slot2.amount);
         slot2.UpdateSlot(slot1.slotid, slot1.item, slot1.amount);
         slot1.UpdateSlot(temp.slotid, temp.item, temp.amount);

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemDrag : MonoBehaviour, IBeginDragHandler,IEndDragHandler,IDragHandler,IPointerEnterHandler,IPointerExitHandler
+public class ItemDrag : MonoBehaviour, IBeginDragHandler,IEndDragHandler,IDragHandler
 {
     public DisplayEnvanter displayedslots;
     public GameObject mouseslot;
@@ -43,13 +43,6 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler,IEndDragHandler,IDragHa
         GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<SmoothMouseLook>()[1].enabled = true;
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-    }
 
     // Start is called before the first frame update
     void Start()
