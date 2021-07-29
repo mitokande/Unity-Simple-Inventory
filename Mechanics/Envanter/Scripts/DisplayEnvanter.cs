@@ -12,17 +12,22 @@ public class DisplayEnvanter : MonoBehaviour
     public GameObject slot;
     public Dictionary<GameObject, EnvanterSlot> itemUI = new Dictionary<GameObject, EnvanterSlot>();
     public Envanter envanter;
-
+    public PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
-        CreateSlots();    
+        CreateSlots();
+        player = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateSlots();
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            envanterUI.SetActive(!envanterUI.activeSelf);
+        }
     }
     public void UpdateSlots()
     {
@@ -48,8 +53,12 @@ public class DisplayEnvanter : MonoBehaviour
         itemUI = new Dictionary<GameObject, EnvanterSlot>();
         for (int i = 0; i < envanter.itemlist.Length; i++)
         {
-            itemUI.Add( Instantiate(slot, Vector3.zero, Quaternion.identity, envanterUI.transform), envanter.itemlist[i]);
+            var obj = Instantiate(slot, Vector3.zero, Quaternion.identity, envanterUI.transform);
+            obj.GetComponent<Button>().onClick.AddListener(delegate { player.UseItem(itemUI[obj]); });
+            itemUI.Add(obj, envanter.itemlist[i]);
+
         }
     }
+
 
 }

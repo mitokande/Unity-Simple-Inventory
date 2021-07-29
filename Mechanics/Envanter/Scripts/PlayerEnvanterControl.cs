@@ -12,16 +12,14 @@ public class PlayerEnvanterControl : MonoBehaviour
     public string savepath;
     public GameObject Interact;
 
-
-
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F5))
         {
             Save();
         }
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.F6))
         {
             Load();
         }

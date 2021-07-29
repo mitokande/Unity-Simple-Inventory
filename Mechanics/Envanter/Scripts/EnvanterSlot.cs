@@ -24,4 +24,8 @@ public class EnvanterSlot
     {
         this.amount += amount;
     }
+    public void RemoveAmount(int amount)
+    {
+        this.amount -= amount;
+    }
 }
