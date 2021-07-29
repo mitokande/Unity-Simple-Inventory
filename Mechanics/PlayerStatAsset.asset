@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerStatAsset
   m_EditorClassIdentifier: 
   PlayerName: Mithat
-  Hunger: 10
+  Hunger: 0
   Health: 0
   Strength: 0
   attackpoints: 0

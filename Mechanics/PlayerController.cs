@@ -35,15 +35,25 @@ public class PlayerController : MonoBehaviour
     public void UseItem(EnvanterSlot slot)
     {
         Debug.Log(slot.item.ItemName);
-        if (slot.amount>1)
+        if (slot.amount>0)
         {
             if (slot.slotid > 0)
             {
                 switch (slot.item.type)
                 {
                     case ItemType.Food:
-                        _playerStat.Hunger -= 2;
-                        slot.RemoveAmount(1);
+                        if (_playerStat.Hunger >= 2)
+                        {
+                            _playerStat.Hunger -= 2;
+                        }
+                        if (slot.amount == 1)
+                        {
+                            slot.UpdateSlot(0, null, 0);
+                        }
+                        else
+                        {
+                            slot.RemoveAmount(1);
+                        }
                         break;
                 }
             } 
@@ -55,11 +65,8 @@ public class PlayerController : MonoBehaviour
                 switch (slot.item.type)
                 {
                     case ItemType.Food:
-                        if (_playerStat.Hunger > 2)
-                        {
-                            _playerStat.Hunger -= 2;
-                        }
-                        slot.UpdateSlot(0,null,0);
+                        
+                        
                         break;
                 }
             }
