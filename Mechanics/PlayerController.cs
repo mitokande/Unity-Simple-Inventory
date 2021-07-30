@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(weapon);
             _playerStat.playerweapon = (Weapon)slot.item;
+            _playerStat.attackpoints = _playerStat.playerweapon.Attack;
             weapon =  Instantiate(_playerStat.playerweapon._3dOBJ, _3dequip.transform.position, _playerStat.playerweapon._3dOBJ.transform.rotation, _3dequip.transform);
         }
         
