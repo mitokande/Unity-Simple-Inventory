@@ -11,6 +11,6 @@ public class PlayerStats : ScriptableObject
     public int Strength;
     public int attackpoints;
     public int defencepoints;
+    public Weapon playerweapon;
 
-    
 }

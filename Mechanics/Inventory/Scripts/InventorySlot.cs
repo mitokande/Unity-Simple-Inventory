@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class EnvanterSlot 
+public class InventorySlot
 {
     public int slotid;
     public Item item;
@@ -14,7 +14,7 @@ public class EnvanterSlot
         this.item = item;
         this.amount = amount;
     }
-    public EnvanterSlot(int id,Item item,int amount)
+    public InventorySlot(int id,Item item,int amount)
     {
         this.slotid = id;
         this.item = item;

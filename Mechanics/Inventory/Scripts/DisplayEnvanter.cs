@@ -9,10 +9,13 @@ using UnityEngine.Events;
 public class DisplayEnvanter : MonoBehaviour
 {
     public GameObject envanterUI;
+    public GameObject inventoryUI;
     public GameObject slot;
-    public Dictionary<GameObject, EnvanterSlot> itemUI = new Dictionary<GameObject, EnvanterSlot>();
-    public Envanter envanter;
+    public Dictionary<GameObject, InventorySlot> itemUI = new Dictionary<GameObject, InventorySlot>();
+    public Inventory envanter;
     public PlayerController player;
+
+    public List<Text> stattexts = new List<Text>();
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,11 @@ public class DisplayEnvanter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        stattexts[0].text = "Player Name: " + player._playerStat.PlayerName;
+        stattexts[1].text = "Attack Points: " + player._playerStat.attackpoints;
+        stattexts[2].text = "Defence Points: " + player._playerStat.defencepoints;
+        stattexts[3].text = "Health: " + player._playerStat.Health;
+        stattexts[4].text = "Hunger:" + player._playerStat.Hunger;
         UpdateSlots();
         if (Input.GetKeyDown(KeyCode.T))
         {
@@ -31,7 +39,7 @@ public class DisplayEnvanter : MonoBehaviour
     }
     public void UpdateSlots()
     {
-        foreach(KeyValuePair<GameObject,EnvanterSlot> slot in itemUI)
+        foreach(KeyValuePair<GameObject, InventorySlot> slot in itemUI)
         {
             if(slot.Value.slotid > 0)
             {
@@ -50,10 +58,10 @@ public class DisplayEnvanter : MonoBehaviour
     }
     public void CreateSlots()
     {
-        itemUI = new Dictionary<GameObject, EnvanterSlot>();
+        itemUI = new Dictionary<GameObject, InventorySlot>();
         for (int i = 0; i < envanter.itemlist.Length; i++)
         {
-            var obj = Instantiate(slot, Vector3.zero, Quaternion.identity, envanterUI.transform);
+            var obj = Instantiate(slot, Vector3.zero, Quaternion.identity, inventoryUI.transform);
             obj.GetComponent<Button>().onClick.AddListener(delegate { player.UseItem(itemUI[obj]); });
             itemUI.Add(obj, envanter.itemlist[i]);
 

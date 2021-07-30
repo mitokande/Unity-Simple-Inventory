@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName ="Yeni Envanter",menuName ="Mekanikler/Yeni Envanter")]
-public class Envanter : ScriptableObject
+public class Inventory : ScriptableObject
 {
-    public EnvanterSlot[] itemlist = new EnvanterSlot[24];
+    public InventorySlot[] itemlist = new InventorySlot[24];
 
     public void AddItem(Item item, int amount)
     {
@@ -19,7 +19,7 @@ public class Envanter : ScriptableObject
         }
         EmptySlot(item, amount);
     }
-    public EnvanterSlot EmptySlot(Item item,int amount)
+    public InventorySlot EmptySlot(Item item,int amount)
     {
         for (int i = 0; i < itemlist.Length; i++)
         {
@@ -32,9 +32,9 @@ public class Envanter : ScriptableObject
         }
         return null;
     }
-    public void SwapItem(EnvanterSlot slot1, EnvanterSlot slot2)
+    public void SwapItem(InventorySlot slot1, InventorySlot slot2)
     {
-        EnvanterSlot temp = new EnvanterSlot(slot2.slotid, slot2.item, slot2.amount);
+        InventorySlot temp = new InventorySlot(slot2.slotid, slot2.item, slot2.amount);
         slot2.UpdateSlot(slot1.slotid, slot1.item, slot1.amount);
         slot1.UpdateSlot(temp.slotid, temp.item, temp.amount);
     }

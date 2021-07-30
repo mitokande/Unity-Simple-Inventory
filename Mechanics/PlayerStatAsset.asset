@@ -16,5 +16,8 @@ MonoBehaviour:
   Hunger: 0
   Health: 0
   Strength: 0
-  attackpoints: 0
+  attackpoints: 7
   defencepoints: 0
+  playerweapon: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
+  equipedItems:
+  - {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}

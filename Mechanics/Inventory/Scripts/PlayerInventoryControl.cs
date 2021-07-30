@@ -6,9 +6,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEditor;
 using UnityEngine.UI;
 
-public class PlayerEnvanterControl : MonoBehaviour
+public class PlayerInventoryControl : MonoBehaviour
 {
-    public Envanter playerEnvanter;
+    public Inventory playerEnvanter;
     public string savepath;
     public GameObject Interact;
 
@@ -28,7 +28,6 @@ public class PlayerEnvanterControl : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out hit, 5f, layerMask))
         {
-            //Debug.DrawRay(transform.GetChild(0).position, transform.GetChild(0).forward * hit.distance, Color.yellow);
 
             Interact.SetActive(true);
 

@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e3514faf6621d94589038c623da9efe, type: 3}
-  m_Name: Silah 2
+  m_Name: Weapon 1
   m_EditorClassIdentifier: 
   ID: 2
-  ItemName: "k\u0131l\u0131\xE7 bir"
+  ItemName: Weapon 1
   Icon: {fileID: 21300000, guid: fa9888819d892604ca95cbc77a9b45af, type: 3}
   type: 0
   stackable: 0
-  Attack: 0
-  star: 0
+  Attack: 7
+  rarity: 2
+  _3dOBJ: {fileID: 8837545547488670087, guid: 42e2ed417cdfc644293ba9b8dfffc230, type: 3}

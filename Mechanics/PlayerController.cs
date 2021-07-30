@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     Vector3 movedirection;
     public PlayerStats _playerStat;
     public Text hunger;
+    public GameObject _3dequip;
+    private GameObject weapon;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hunger.text = "Açlýk: " + _playerStat.Hunger;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
@@ -32,9 +34,8 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = transform.position + movedirection.normalized * Time.deltaTime * speed;
     }
-    public void UseItem(EnvanterSlot slot)
+    public void UseItem(InventorySlot slot)
     {
-        Debug.Log(slot.item.ItemName);
         if (slot.amount>0)
         {
             if (slot.slotid > 0)
@@ -42,34 +43,42 @@ public class PlayerController : MonoBehaviour
                 switch (slot.item.type)
                 {
                     case ItemType.Food:
-                        if (_playerStat.Hunger >= 2)
-                        {
-                            _playerStat.Hunger -= 2;
-                        }
-                        if (slot.amount == 1)
-                        {
-                            slot.UpdateSlot(0, null, 0);
-                        }
-                        else
-                        {
-                            slot.RemoveAmount(1);
-                        }
+                        EatItem(slot);
+                        break;
+                    case ItemType.Weapon:
+                        Equip(slot);
+                        break;
+                    case ItemType.Armor:
+                        Equip(slot);
                         break;
                 }
             } 
         }
-        else if(slot.amount == 1)
+
+    }
+    public void EatItem(InventorySlot slot)
+    {
+        if (_playerStat.Hunger >= 2)
         {
-            if (slot.slotid > 0)
+            if (slot.amount > 1)
             {
-                switch (slot.item.type)
-                {
-                    case ItemType.Food:
-                        
-                        
-                        break;
-                }
+                slot.RemoveAmount(1);
             }
+            else{
+                slot.UpdateSlot(0, null, 0);
+            }
+            _playerStat.Hunger -= 2;
         }
+
+    }
+    public void Equip(InventorySlot slot)
+    {
+        if(slot.item.type == ItemType.Weapon && slot.item != _playerStat.playerweapon)
+        {
+            Destroy(weapon);
+            _playerStat.playerweapon = (Weapon)slot.item;
+            weapon =  Instantiate(_playerStat.playerweapon._3dOBJ, _3dequip.transform.position, _playerStat.playerweapon._3dOBJ.transform.rotation, _3dequip.transform);
+        }
+        
     }
 }
