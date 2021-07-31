@@ -1,3 +1,5 @@
 A Simple Inventory System that I am making.
 
-https://www.hizliresim.com/17siy4s
+![Inventory Screen](https://i.hizliresim.com/pinf3ur.png)
+
+Using and Equipping Items by clicking.

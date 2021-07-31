@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public Text hunger;
     public GameObject _3dequip;
     private GameObject weapon;
-    
+    public GameObject weaponslot;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +28,10 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         movedirection = transform.forward * vertical + transform.right * horizontal;
+        if(_playerStat.playerweapon != null)
+        {
+            weaponslot.transform.GetChild(0).GetComponent<Image>().sprite = _playerStat.playerweapon.Icon;
+        }
     }
 
     public void FixedUpdate()

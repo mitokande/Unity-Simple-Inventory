@@ -13,132 +13,39 @@ MonoBehaviour:
   m_Name: Envanter
   m_EditorClassIdentifier: 
   itemlist:
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 3
-    item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
-    amount: 1
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 3
-    item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
-    amount: 1
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 3
-    item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
-    amount: 1
-  - slotid: 3
-    item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
-    amount: 1
-  - slotid: 3
-    item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
-    amount: 1
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 3
-    item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
-    amount: 1
   - slotid: 1
     item: {fileID: 11400000, guid: df06945f2bf4e1e438411f29ccd2f70e, type: 2}
-    amount: 10
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
-  - slotid: 0
-    item: {fileID: 0}
-    amount: 0
+    amount: 6
   - slotid: 2
     item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
     amount: 1
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
   - slotid: 3
     item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
     amount: 1
-  - slotid: 3
-    item: {fileID: 11400000, guid: ee667bdfb76257346a5cdce9d0e606bd, type: 2}
-    amount: 1
   - slotid: 0
     item: {fileID: 0}
     amount: 0
@@ -148,15 +55,108 @@ MonoBehaviour:
   - slotid: 0
     item: {fileID: 0}
     amount: 0
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
   - slotid: 0
     item: {fileID: 0}
     amount: 0
-  - slotid: 2
-    item: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
-    amount: 1
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
+  - slotid: 0
+    item: {fileID: 0}
+    amount: 0
   - slotid: 0
     item: {fileID: 0}
     amount: 0

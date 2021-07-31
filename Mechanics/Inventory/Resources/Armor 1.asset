@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1247b843ddfa70243bf19a6d54bc8218, type: 3}
-  m_Name: PlayerStatAsset
+  m_Script: {fileID: 11500000, guid: 217368a032b0a414299b4cfc0b71a20d, type: 3}
+  m_Name: Armor 1
   m_EditorClassIdentifier: 
-  PlayerName: Mithat
-  Hunger: 20
-  Health: 100
-  Strength: 0
-  attackpoints: 7
-  defencepoints: 0
-  playerweapon: {fileID: 11400000, guid: da2e7e1adbf3afe41b422cb54757e2ea, type: 2}
+  ID: 4
+  ItemName: Armor 1
+  Icon: {fileID: 0}
+  type: 2
+  stackable: 0
+  armortype: 0
+  DefencePoints: 4
